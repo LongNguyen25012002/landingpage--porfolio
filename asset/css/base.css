@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@600&family=Raleway:wght@700&display=swap');
+:root{
+    --fontOS : 'Open Sans', sans-serif;
+    --fontPP: 'Poppins', sans-serif;
+    --fontRW:'Raleway', sans-serif;
+    --color-title:#173b6c;
+    --color-blue:#149ddd;
+    --color-text:#272829;
+    --color-black:#040b14;
+}
+
+*{
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+    color: #272829;
+}
+
+.app-portfolio{
+    overflow: hidden;
+}
+
+
+/* reset */
+p{
+    line-height: 1.5;
+    font-size: 1.6rem;
+    font-family: var(--fontOS);
+    font-weight: 400;
+    color: var(--color-text);
+}
+
+a{
+    font-size: 1.5;
+    text-decoration: none;
+}
+
+img{
+    max-width: 100%;
+    width: 100%;
+    display: block;
+}
+
+.section-set{
+    padding: 60px 12px;
+}
+
+.section-title{
+    font-size: 3.2rem;
+    color: var(--color-title);
+    font-weight: 700;
+    font-family: var(--fontRW);
+}
+
+.line-bottom-title{
+    height: 3px;
+    width: 50px;
+    background-color: var(--color-blue);
+    margin: 18px 0;
+}
+
+.text-infor-star{
+    margin-bottom: 32px;
+    color: var(--color-text);
+}
+
+.facts{
+    padding-bottom: 30px;
+}
+
+.skill,
+.portfolio,
+.testimonials{
+    background-color: #f5f8fd;
+}
+
+.contact{
+    padding-bottom: 130px;
+}
+
+.text-intial{
+    font-style: italic;
+}
+
+/* slider set */
+.testimonials__content{
+    position: relative;
+}
+
+.testimonials__content button{
+    display: none !important;
+}
+
+.testimonials__content .slick-dots{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: 2px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+    list-style: none;
+}
+
+.testimonials__content .slick-dots li {
+    width: 12px;
+    height: 12px;
+    border: 1px solid var(--color-blue);
+    border-radius: 50%;
+    margin: 0 4px;
+    cursor: pointer;
+}
+
+.testimonials__content .slick-dots li.slick-active{
+    background-color: var(--color-blue);
+}
+
+/* retrun home */
+.scron-retun-home{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    line-height: 40px;
+    font-size: 2rem;
+    text-align: center  ;
+    background-color: #57caff;
+    color: #f5f8fd;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    transition: all 0.2s linear;
+    z-index: 1000;
+    display: none;
+}
+
+.scron-retun-home:hover{
+    background-color: var(--color-blue);
+}
+
+.toggle-menu{
+    display: none;
+}
